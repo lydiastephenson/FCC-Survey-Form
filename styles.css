@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --background-color: #231F1DD9;
+    --font-color: #FAFAFA;
+    --primary-color: #4cbdce;
+    --secondary-color: #dd831f;
+    --hover-color: #b16a19;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-image: url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    color: var(--font-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+}
+
+header {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+}
+
+header p {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+form label, form p {
+    margin-bottom: 10px;
+}
+
+form span {
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    accent-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
